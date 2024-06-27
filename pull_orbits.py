@@ -71,7 +71,7 @@ def main():
             print(f'Got coordinates for {name} ({obj_id})')
 
             coords = [{'x': float(coord.x.value), 'y': float(coord.y.value), 'z': float(coord.z.value)} for coord in sky_coords]
-            new_asteroid_dict = { 'name': name, obj_id: obj_id, 'coords_au': coords }
+            new_asteroid_dict = { 'name': name, 'obj_id': obj_id, 'coords_au': coords }
             
             asteroid_dict_list.append(new_asteroid_dict)
 
