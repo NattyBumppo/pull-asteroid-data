@@ -67,9 +67,10 @@ def main():
         asteroid_dict_list = []
 
         for name, obj_id in csv_reader:
-            coords = get_coords_for_single_revolution(obj_id)
+            sky_coords = get_coords_for_single_revolution(obj_id)
             print(f'Got coordinates for {name} ({obj_id})')
-            print(coords)
+
+            coords = [{'x': float(coord.x.value), 'y': float(coord.y.value), 'z': float(coord.z.value)} for coord in sky_coords]
             new_asteroid_dict = { 'name': name, obj_id: obj_id, 'coords_au': coords }
             
             asteroid_dict_list.append(new_asteroid_dict)
