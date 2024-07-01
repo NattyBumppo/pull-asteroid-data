@@ -1,10 +1,19 @@
-Asteroid Name,JPL Horizons ID
-Ceres,1
-Pallas,2
-Juno,3
-Vesta,4
-Astraea,5
-Hebe,6
-Iris,7
-Flora,8
-Metis,9
+Asteroid Name,JPL Horizons ID,Type
+Ceres,A801 AA,asteroid
+Vesta,A807 FA,asteroid
+Pallas,A802 FA,asteroid
+Hygiea,A849 GA,asteroid
+Interamnia,1952 MW,asteroid
+Europa,A858 CA,asteroid
+Davida,A903 KB,asteroid
+Sylvia,A909 GA,asteroid
+Eunomia,A851 OA,asteroid
+Euphrosyne,A907 GP,asteroid
+Mercury,199,planet
+Venus,299,planet
+Earth,399,planet
+Mars,499,planet
+Jupiter,599,planet
+Saturn,699,planet
+Uranus,799,planet
+Neptune,899,planet

@@ -60,18 +60,18 @@ def calc_period(obj_id):
     return horizons_obj, orbital_period
 
 def main():
-    with open('asteroids_test.csv', mode='r', newline='') as csv_file:
+    with open('asteroids.csv', mode='r', newline='') as csv_file:
         csv_reader = csv.reader(csv_file)
         header = next(csv_reader)
 
         asteroid_dict_list = []
 
-        for name, obj_id in csv_reader:
+        for name, obj_id, type in csv_reader:
             sky_coords = get_coords_for_single_revolution(obj_id)
             print(f'Got coordinates for {name} ({obj_id})')
 
             coords = [{'x': float(coord.x.value), 'y': float(coord.y.value), 'z': float(coord.z.value)} for coord in sky_coords]
-            new_asteroid_dict = { 'name': name, 'obj_id': obj_id, 'coords_au': coords }
+            new_asteroid_dict = { 'name': name, 'obj_id': obj_id, 'coords_au': coords, 'type': type }
             
             asteroid_dict_list.append(new_asteroid_dict)
 
